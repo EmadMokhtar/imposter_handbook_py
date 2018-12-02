@@ -1,5 +1,6 @@
 from trees import Node
-from search import depth_first_search, breadth_first_search
+from search import (depth_first_search, breadth_first_search,
+                    recursion_tree_traverse)
 
 # Setup Tree
 root = Node(0)
@@ -15,3 +16,5 @@ depth_first_search(root)
 print('=' * 25)
 print('Breadth First Search')
 breadth_first_search(root)
+print('Recursion Tree Traversal')
+recursion_tree_traverse(root)

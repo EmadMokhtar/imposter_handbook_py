@@ -18,3 +18,15 @@ def breadth_first_search(root_node):
             queue.insert(0, current_node.right)
         if current_node.left:
             queue.insert(0, current_node.left)
+
+
+def recursion_tree_traverse(root_node):
+    print(root_node)
+    if root_node.is_leaf():
+        return None
+
+    if root_node.left:
+        recursion_tree_traverse(root_node.left)
+
+    if root_node.right:
+        recursion_tree_traverse(root_node.right)
