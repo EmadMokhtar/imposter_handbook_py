@@ -1,6 +1,6 @@
 def merge_sort(unsorted_list):
     """
-    Merge sort algorithem
+    Merge sort algorithm
     """
     if len(unsorted_list) <= 1:
         return unsorted_list
